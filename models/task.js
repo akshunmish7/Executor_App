@@ -13,7 +13,7 @@ const task_schema=new mongoose.Schema(
         },
     }
 );
-/* creating our model with "task_schema" as Schema */
+/* creating my model with "task_schema" as Schema */
 const tasks=mongoose.model('tasks', task_schema);
-/* exporting our model so that it can be used by index.js */
+/* exporting the model so that it can be used by index.js */
 module.exports=tasks;

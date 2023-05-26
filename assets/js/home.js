@@ -1,5 +1,3 @@
-/* link handler function */
-/* no jquery is used in this javascript file. */
 function change_link(ids)
 {
     /* if no task is selected for deletion, then the user will be prompted to select atleast one task to delete*/
@@ -41,15 +39,13 @@ document.querySelector('#task-action>a').addEventListener('click', function()
 })
 
 
-/* date handler function */
-
+// data handler
 for (let date of document.querySelectorAll('.text-muted'))
 {
     date.innerText=date.innerText.toString().substring(0, 15);
 }
 
-/* logo handler */
-/* if no category is choosen for a particular task, then all the category logos will be hidden from the user in the category list */
+// logo part JS  
 for (let logo of document.querySelectorAll('.logo'))
 {
     if(logo.innerText=='Choose a Category')
@@ -59,8 +55,7 @@ for (let logo of document.querySelectorAll('.logo'))
 }
 
 
-/* add button manager */
-/* if no field is filled for the task addition, then a warning will be shown to the user to select all the fields. but still all the tasks will be shown to him/her. */
+// Add button exclamation
 document.querySelector('button[type="submit"]').addEventListener('click', function()
 {
     if(document.querySelector('textarea').value==""||document.querySelector('#two-dropdowns select').value=="Choose a Category"||document.querySelector('#two-dropdowns input').value=="")
