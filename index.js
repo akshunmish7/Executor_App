@@ -3,8 +3,8 @@ const port=8000;
 const path=require('path')
 const router=express.Router();
 const app = express();
-const db = require('../config/mongoose');
-const tasks = require('../models/task')
+const db = require('./config/mongoose');
+const tasks = require('./models/task')
 console.log('router loaded');
 app.set('case sensitive routing', false);
 app.set('views', './views');
